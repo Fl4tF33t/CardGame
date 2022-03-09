@@ -70,7 +70,7 @@ public class Deck
 
     internal void DealCard(Hand hand)
     {
-        for (int h = 0; h<5; h++)
+        for (int h = 0; h<7; h++)
         {
             
             if (hand.cards[h] == null) 
@@ -78,6 +78,7 @@ public class Deck
                 hand.cards[h] = CreateNewCard(hand.positions[h].position, hand.animNames[h]);
                 return;
             }
+            Debug.Log(h);
         }
     }
 }
