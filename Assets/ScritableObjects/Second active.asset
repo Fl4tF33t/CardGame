@@ -16,7 +16,7 @@ MonoBehaviour:
   description: if all same colour, unlock a second active
   cost: 0
   damage: 0
-  damageType: 0
+  damageType: 4
   cardImage: {fileID: 0}
   frameImage: {fileID: 0}
   numberInDeck: 1
