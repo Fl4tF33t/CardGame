@@ -9,7 +9,9 @@ public class CardData : ScriptableObject
     {
         Water,
         Fire,
-        Grass
+        Grass,
+        Active,
+        Spell
     }
 
     public string cardTitle;

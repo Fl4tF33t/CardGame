@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Summon
   m_EditorClassIdentifier: 
   cardTitle: Summon Card
-  description: Summon a card
+  description: Summon a boss
   cost: 0
   damage: 0
   damageType: 0

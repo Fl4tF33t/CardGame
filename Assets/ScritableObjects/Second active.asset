@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a67ca82d62f271b4080338f97d5e1cfe, type: 3}
-  m_Name: FireCard 1
+  m_Name: Second active
   m_EditorClassIdentifier: 
-  cardTitle: Fire card
-  description: Square shape card
-  cost: 1
-  damage: 1
-  damageType: 1
-  cardImage: {fileID: 21300000, guid: a2abc6b1fbaeb704c91d66c0ca405ce0, type: 3}
-  frameImage: {fileID: 21300000, guid: c9c33772bd265f5439701b13766e8e3e, type: 3}
+  cardTitle: Spell card
+  description: if all same colour, unlock a second active
+  cost: 0
+  damage: 0
+  damageType: 0
+  cardImage: {fileID: 0}
+  frameImage: {fileID: 0}
   numberInDeck: 1
-  isSpecialCard: 0
+  isSpecialCard: 1
