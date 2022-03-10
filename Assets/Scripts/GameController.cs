@@ -47,14 +47,21 @@ public class GameController : MonoBehaviour
 
         StartCoroutine(DealHands());
         playBoard = GameObject.Find("PlayPanel");
+        
 
     }
 
     private void Update()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
         if (turns == 9)
         {
             SceneManager.LoadScene(2);
+        }
+        if(sceneName == "GamePlay1" && turns == 9)
+        {
+            SceneManager.LoadScene(3);
         }
         if (manaAmount == 1)
         {
