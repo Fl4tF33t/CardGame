@@ -30,7 +30,11 @@ public class GameController : MonoBehaviour
     public int turns = 1;
     public int manaAmount = 3;
     public Text turnScore = null;
+    public Text damageScore = null;
     public int score = 0;
+    public Card[] currentHand = new Card[4];
+    public int[] index = new int[4];
+    public bool manaPlayed = false;
 
     private void Awake()
     {
@@ -40,8 +44,8 @@ public class GameController : MonoBehaviour
         enemyDeck.Create();
 
         StartCoroutine(DealHands());
-       
-        
+        playBoard = GameObject.Find("PlayPanel");
+
     }
 
     private void Update()
@@ -86,7 +90,21 @@ public class GameController : MonoBehaviour
             manaBall[3].SetActive(false);
         }
         
-        turnScore.text = "Turn: " + turns + "   Score: " + score;
+        turnScore.text = "" +turns;
+        
+        damageScore.text = "" + score;
+        //for (int i = 0; i < 5; i++)
+        //{
+        //    if ()
+        //    {
+
+        //    }
+        //}
+        //foreach (Transform child in playBoard.transform)
+        //{
+        //    score = score + playerHand.cards[]
+        //}
+        score = playerHand.cards[0].cardData.damage + playerHand.cards[1].cardData.damage + playerHand.cards[2].cardData.damage + playerHand.cards[3].cardData.damage + playerHand.cards[4].cardData.damage;
     }
 
     public void Quit()
@@ -102,16 +120,43 @@ public class GameController : MonoBehaviour
         //  playerHand.cards[i] = null;
         //}
         //GameObject.Destroy(playerHand.cards[1]);
+       
         handPanel = GameObject.Find("HandPanel");
-        foreach(Transform child in handPanel.transform)
+        foreach (Transform child in handPanel.transform)
         {
             Destroy(child.gameObject);
         }
         
+
         StartCoroutine(DealHands());
-        manaAmount = 3;
+        if (manaPlayed==true)
+        {
+            manaAmount = 4;
+        }
+        else
+        {
+            manaAmount = 3;
+        }
         turns++;
+        /*for (int i = 0; i < currentHand.Length; i++)
+        {
+            currentHand[i] = playerHand.cards[i];
+        }
+        for (int i = 0; i < cards.Count; i++)
+        {
+            for (int j = 0; j < currentHand.Length; j++)
+            {
+                if (cards[i] == currentHand[j])
+                {
+                    index[j] = i;
+                } 
+            }
+        }
+        score = score + cards[index[0]].damage + cards[index[1]].damage + cards[index[2]].damage + cards[index[3]].damage + cards[index[4]].damage;
+    */
+        
     }
+
 
     internal IEnumerator DealHands()
     {
