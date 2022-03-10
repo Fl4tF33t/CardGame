@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class GameController : MonoBehaviour
 {
@@ -40,7 +41,11 @@ public class GameController : MonoBehaviour
     public void SkipTurn()
     {
         Debug.Log("EndTurn");
-        for (int i = 0; i < 6; i++)
+        //for (int i = 0; i < 5; i++)
+        //{
+        //    playerDeck.cardDatas.Add(playerHand.cards[i]);
+        //}
+        for (int i = 0; i < 5; i++)
         {
             playerHand.cards[i] = null;
         }
@@ -50,7 +55,7 @@ public class GameController : MonoBehaviour
     internal IEnumerator DealHands()
     {
         yield return new WaitForSeconds(1);
-        for (int t = 0; t < 6; t++)
+        for (int t = 0; t < 5; t++)
         {
             playerDeck.DealCard(playerHand);
            // enemyDeck.DealCard(enemyHand);
