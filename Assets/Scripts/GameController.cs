@@ -36,6 +36,7 @@ public class GameController : MonoBehaviour
     public int index = 0;
     public bool manaPlayed = false;
     public int plusScore = 0;
+    public InfoHolder scoreInfo;
 
 
     private void Awake()
@@ -47,6 +48,7 @@ public class GameController : MonoBehaviour
 
         StartCoroutine(DealHands());
         playBoard = GameObject.Find("PlayPanel");
+        scoreInfo = GameObject.Find("InfoHolder").GetComponent<InfoHolder>();
         
 
     }
@@ -61,7 +63,16 @@ public class GameController : MonoBehaviour
         }
         if(sceneName == "GamePlay1" && turns == 9)
         {
-            SceneManager.LoadScene(3);
+            if(scoreInfo.score1 > scoreInfo.score2)
+            {
+                SceneManager.LoadScene(3);
+            }
+            else if(scoreInfo.score1 < scoreInfo.score2)
+            {
+                SceneManager.LoadScene(0);
+            }
+            
+
         }
         if (manaAmount == 1)
         {
