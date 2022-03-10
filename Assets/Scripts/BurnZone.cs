@@ -14,6 +14,8 @@ public class BurnZone : MonoBehaviour, IDropHandler
             if (card != null)
             {
                 GameController.instance.playerHand.BurnCard(card);
+            GameController.instance.index -= 1;
+            GameController.instance.plusScore -= card.cardData.damage;
             }  
         
         

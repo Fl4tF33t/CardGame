@@ -33,8 +33,10 @@ public class GameController : MonoBehaviour
     public Text damageScore = null;
     public int score = 0;
     public Card[] currentHand = new Card[4];
-    public int[] index = new int[4];
+    public int index = 0;
     public bool manaPlayed = false;
+    public int plusScore = 0;
+
 
     private void Awake()
     {
@@ -52,7 +54,7 @@ public class GameController : MonoBehaviour
     {
         if (turns == 9)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
         if (manaAmount == 1)
         {
@@ -104,7 +106,7 @@ public class GameController : MonoBehaviour
         //{
         //    score = score + playerHand.cards[]
         //}
-        score = playerHand.cards[0].cardData.damage + playerHand.cards[1].cardData.damage + playerHand.cards[2].cardData.damage + playerHand.cards[3].cardData.damage + playerHand.cards[4].cardData.damage;
+        score =  plusScore;
     }
 
     public void Quit()
@@ -154,6 +156,7 @@ public class GameController : MonoBehaviour
         }
         score = score + cards[index[0]].damage + cards[index[1]].damage + cards[index[2]].damage + cards[index[3]].damage + cards[index[4]].damage;
     */
+        Debug.Log(index);
         
     }
 

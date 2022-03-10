@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a67ca82d62f271b4080338f97d5e1cfe, type: 3}
   m_Name: Second active
   m_EditorClassIdentifier: 
-  cardTitle: Spell card
+  cardTitle: Active card
   description: if all same colour, unlock a second active
   cost: 0
   damage: 0
