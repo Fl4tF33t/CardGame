@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: +1 mana
   m_EditorClassIdentifier: 
   cardTitle: mana
-  description: 'Active: +1 mana'
+  description: 
   cost: 0
   damage: 0
   damageType: 3

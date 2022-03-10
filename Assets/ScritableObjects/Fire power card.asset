@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fire power card
   m_EditorClassIdentifier: 
   cardTitle: Active card
-  description: Add +1+1 to fire
+  description: 
   cost: 0
   damage: 0
   damageType: 4

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: +1+1
   m_EditorClassIdentifier: 
   cardTitle: Active card
-  description: 'Active:  +1/+1 to all'
+  description: 
   cost: 0
   damage: 0
   damageType: 3

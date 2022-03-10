@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Water power card
   m_EditorClassIdentifier: 
   cardTitle: Active card
-  description: Add +1+1 to water
+  description: 
   cost: 3
   damage: 0
   damageType: 4

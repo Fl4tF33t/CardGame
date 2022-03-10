@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1 mana water unit
   m_EditorClassIdentifier: 
   cardTitle: Water Card
-  description: Unit
+  description: 
   cost: 1
   damage: 1
   damageType: 0

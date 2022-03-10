@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2 mana fire unit
   m_EditorClassIdentifier: 
   cardTitle: Fire card
-  description: Unit
+  description: 
   cost: 2
   damage: 2
   damageType: 1

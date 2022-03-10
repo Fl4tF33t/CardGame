@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Hand size +1
   m_EditorClassIdentifier: 
   cardTitle: Active card
-  description: 'Active: hand size +1'
+  description: 
   cost: 0
   damage: 0
   damageType: 3
