@@ -27,15 +27,14 @@ public class Hand
 
     public void PlayCard(Card card)
     {
-        /*for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 5; i++)
         {
             if (cards[i] == card)
             {
-                
                 cards[i] = null;
                 GameController.instance.playerDeck.DealCard(this);
                 break;
             }
-        }*/
+        }
     }
 }
