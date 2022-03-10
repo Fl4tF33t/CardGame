@@ -69,15 +69,15 @@ public class Deck
     }
 
     internal void DealCard(Hand hand)
-    {
-        for (int h = 0; h<5; h++)
-        {
-            
-            if (hand.cards[h] == null) 
+    {  
+            for (int h = 0; h < 6; h++)
             {
-                hand.cards[h] = CreateNewCard(hand.positions[h].position, hand.animNames[h]);
-                return;
+
+                if (hand.cards[h] == null)
+                {
+                    hand.cards[h] = CreateNewCard(hand.positions[h].position, hand.animNames[h]);
+                    return;
+                }
             }
-        }
     }
 }
