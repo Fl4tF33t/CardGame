@@ -21,6 +21,7 @@ public class GameController : MonoBehaviour
     public GameObject cardPrefab = null;
     public Canvas canvas = null;
     public GameObject handPanel = null;
+    public GameObject playBoard = null;
 
     public bool isPlayable = false;
 
@@ -42,10 +43,17 @@ public class GameController : MonoBehaviour
     public void SkipTurn()
     {
         Debug.Log("EndTurn");
-        for (int i = 0; i < 6; i++)
+        // for (int i = 0; i < 5; i++)
+        //{
+        //  playerHand.cards[i] = null;
+        //}
+        //GameObject.Destroy(playerHand.cards[1]);
+        handPanel = GameObject.Find("HandPanel");
+        foreach(Transform child in handPanel.transform)
         {
-            playerHand.cards[i] = null;
+            Destroy(child.gameObject);
         }
+        
         StartCoroutine(DealHands());    
     }
 
