@@ -70,9 +70,9 @@ public class Deck
 
     internal void DealCard(Hand hand)
     {  
-            for (int h = 0; h < 5; h++)
+            for (int h = 0; h < 6; h++)
             {
-                
+
                 if (hand.cards[h] == null)
                 {
                     hand.cards[h] = CreateNewCard(hand.positions[h].position, hand.animNames[h]);
