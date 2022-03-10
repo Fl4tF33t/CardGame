@@ -43,15 +43,12 @@ public class GameController : MonoBehaviour
     internal IEnumerator DealHands()
     {
         yield return new WaitForSeconds(1);
-
-        for (int t = 0; t < 7; t++)
+        for (int t = 0; t < 5; t++)
         {
             playerDeck.DealCard(playerHand);
-            //enemyDeck.DealCard(enemyHand);
+            enemyDeck.DealCard(enemyHand);
             yield return new WaitForSeconds(1);
-            Debug.Log(t);
         }
-
     }
 
 }

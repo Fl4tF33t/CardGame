@@ -1757,8 +1757,6 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
     positions:
     - {fileID: 1829491682}
     - {fileID: 260040039}
@@ -1768,8 +1766,6 @@ MonoBehaviour:
     - {fileID: 1852731874}
     - {fileID: 1278128840}
     animNames:
-    - CardDeal1
-    - CardDeal1
     - CardDeal1
     - CardDeal1
     - CardDeal1
