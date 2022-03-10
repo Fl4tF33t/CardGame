@@ -776,23 +776,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e012755035f5e34eae400e237805b93, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e012755035f5e34eae400e237805b93, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e012755035f5e34eae400e237805b93, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e012755035f5e34eae400e237805b93, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 119
+      value: -29.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e012755035f5e34eae400e237805b93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 34
+      value: 236.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e012755035f5e34eae400e237805b93, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3521,6 +3521,7 @@ MonoBehaviour:
   cardPrefab: {fileID: 3882188740557520335, guid: eb5c19c2ec889d24da7edd106c39cf51, type: 3}
   canvas: {fileID: 932337434}
   handPanel: {fileID: 1588260479}
+  playBoard: {fileID: 0}
   isPlayable: 0
 --- !u!4 &1916591721
 Transform:

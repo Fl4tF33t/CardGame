@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Hand
 {
-    public Card[] cards = new Card[5];
+    public List<Card> cards = new List <Card>();
     public Transform[] positions = new Transform[5];
     public Transform[] playPositions = new Transform[5];
     public string[] animNames = new string[5];
@@ -19,7 +19,7 @@ public class Hand
             {
                 GameObject.Destroy(cards[i].gameObject);
                 cards[i] = null;
-                GameController.instance.playerDeck.DealCard(this);
+                //GameController.instance.playerDeck.DealCard(this);
                 break;
             }
         }
