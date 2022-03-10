@@ -5,10 +5,10 @@ using UnityEngine.EventSystems;
 
 public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    private Vector3 originalPosition;
+    public Transform originalPosition = null;
     public void OnBeginDrag(PointerEventData eventData)
     {
-        originalPosition = transform.position;
+        originalPosition = this.transform.parent;
         GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 
@@ -16,7 +16,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     {
         if (!GameController.instance.isPlayable)
             return;
-        transform.position += (Vector3)eventData.delta;
+        this.transform.position += (Vector3)eventData.delta;
         Card card = GetComponent<Card>();
 
         foreach(GameObject hover in eventData.hovered)
@@ -36,7 +36,7 @@ public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        transform.position = originalPosition;
+        this.transform.SetParent (originalPosition);
         GetComponent<CanvasGroup>().blocksRaycasts = true;
 
     }

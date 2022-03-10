@@ -40,7 +40,7 @@ public class Deck
 
     public Card CreateNewCard(Vector3 position, string animName)
     {
-        GameObject newCard = GameObject.Instantiate(GameController.instance.cardPrefab,GameController.instance.canvas.gameObject.transform);
+        GameObject newCard = GameObject.Instantiate(GameController.instance.cardPrefab,GameController.instance.handPanel.gameObject.transform);
         newCard.transform.position = position;
         Card card = newCard.GetComponent<Card>();
         if (card)
@@ -48,7 +48,7 @@ public class Deck
             card.cardData = RandomCard();
             card.Initialise();
 
-            Animator animator = newCard.GetComponentInChildren<Animator>();
+           Animator animator = newCard.GetComponentInChildren<Animator>();
             if (animator)
             {
                 animator.CrossFade(animName, 0);
@@ -70,7 +70,7 @@ public class Deck
 
     internal void DealCard(Hand hand)
     {  
-            for (int h = 0; h < 6; h++)
+            for (int h = 0; h < 5; h++)
             {
 
                 if (hand.cards[h] == null)

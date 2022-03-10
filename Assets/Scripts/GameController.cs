@@ -20,6 +20,7 @@ public class GameController : MonoBehaviour
 
     public GameObject cardPrefab = null;
     public Canvas canvas = null;
+    public GameObject handPanel = null;
 
     public bool isPlayable = false;
 
@@ -31,6 +32,7 @@ public class GameController : MonoBehaviour
         enemyDeck.Create();
 
         StartCoroutine(DealHands());
+        
     }
     public void Quit()
     {
@@ -50,13 +52,14 @@ public class GameController : MonoBehaviour
     internal IEnumerator DealHands()
     {
         yield return new WaitForSeconds(1);
-        for (int t = 0; t < 6; t++)
+        for (int t = 0; t < 5; t++)
         {
             playerDeck.DealCard(playerHand);
            // enemyDeck.DealCard(enemyHand);
             yield return new WaitForSeconds(1);
         }
         isPlayable = true;
+        
     }
 
 }

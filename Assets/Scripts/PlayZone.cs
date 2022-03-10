@@ -7,11 +7,11 @@ public class PlayZone : MonoBehaviour, IDropHandler
 {
     public void OnDrop(PointerEventData eventData)
     {
-        GameObject obj = eventData.pointerDrag;
-        Card card = obj.GetComponent<Card>();
-        if (card != null)
+        DragAndDrop obj = eventData.pointerDrag.GetComponent<DragAndDrop>();
+        //Card card = obj.GetComponent<Card>();
+        if (obj != null)
         {
-
+            obj.originalPosition = this.transform;
         }
         Debug.Log("Play Zone");
     }
