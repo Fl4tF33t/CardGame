@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -22,8 +23,14 @@ public class GameController : MonoBehaviour
     public Canvas canvas = null;
     public GameObject handPanel = null;
     public GameObject playBoard = null;
+    public GameObject[] manaBall = new GameObject[3];
 
     public bool isPlayable = false;
+
+    public int turns = 1;
+    public int manaAmount = 3;
+    public Text turnScore = null;
+    public int score = 0;
 
     private void Awake()
     {
@@ -33,8 +40,55 @@ public class GameController : MonoBehaviour
         enemyDeck.Create();
 
         StartCoroutine(DealHands());
+       
         
     }
+
+    private void Update()
+    {
+        if (turns == 9)
+        {
+            SceneManager.LoadScene(1);
+        }
+        if (manaAmount == 1)
+        {
+            manaBall[0].SetActive(true);
+            manaBall[1].SetActive(false);
+            manaBall[2].SetActive(false);
+            manaBall[3].SetActive(false);
+        }
+        else if (manaAmount == 2)
+        {
+            manaBall[0].SetActive(true);
+            manaBall[1].SetActive(true);
+            manaBall[2].SetActive(false);
+            manaBall[3].SetActive(false);
+        }
+        else if (manaAmount == 3)
+        {
+            manaBall[0].SetActive(true);
+            manaBall[1].SetActive(true);
+            manaBall[2].SetActive(true);
+            manaBall[3].SetActive(false);
+        }
+        else if (manaAmount == 4)
+        {
+            manaBall[0].SetActive(true);
+            manaBall[1].SetActive(true);
+            manaBall[2].SetActive(true);
+            manaBall[3].SetActive(true);
+        }
+        else if (manaAmount == 0)
+        {
+            manaBall[0].SetActive(false);
+            manaBall[1].SetActive(false);
+            manaBall[2].SetActive(false);
+            manaBall[3].SetActive(false);
+        }
+        
+        turnScore.text = "Turn: " + turns + "   Score: " + score;
+    }
+
     public void Quit()
     {
         SceneManager.LoadScene(0);
@@ -54,7 +108,9 @@ public class GameController : MonoBehaviour
             Destroy(child.gameObject);
         }
         
-        StartCoroutine(DealHands());    
+        StartCoroutine(DealHands());
+        manaAmount = 3;
+        turns++;
     }
 
     internal IEnumerator DealHands()
