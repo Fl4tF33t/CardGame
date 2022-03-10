@@ -17,7 +17,7 @@ MonoBehaviour:
   cost: 3
   damage: 3
   damageType: 2
-  cardImage: {fileID: 21300000, guid: 33bbe8acc1fcfaf46977cdca0c1e66ae, type: 3}
-  frameImage: {fileID: 21300000, guid: 33bbe8acc1fcfaf46977cdca0c1e66ae, type: 3}
+  cardImage: {fileID: 21300000, guid: dd4f306793aa40d479ed17ac483be277, type: 3}
+  frameImage: {fileID: 21300000, guid: dd4f306793aa40d479ed17ac483be277, type: 3}
   numberInDeck: 1
   isSpecialCard: 0

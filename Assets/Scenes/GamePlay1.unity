@@ -3492,18 +3492,18 @@ MonoBehaviour:
     - CardDeal1
     isPlayers: 0
   cards:
-  - {fileID: 11400000, guid: a5c249ad46563004385b87b12251ccc4, type: 2}
-  - {fileID: 11400000, guid: e77a535b116b9ec4faf10a6bef736790, type: 2}
-  - {fileID: 11400000, guid: 7fea4399f233d4c43a235379dce200ad, type: 2}
-  - {fileID: 11400000, guid: 1edf89ec3812f4843a72832323661c82, type: 2}
-  - {fileID: 11400000, guid: 0e969f5fabe21c941b516926afd28d1d, type: 2}
-  - {fileID: 11400000, guid: 3120e82e36f44ef45a84fb553473f792, type: 2}
-  - {fileID: 11400000, guid: 397923b3c82fc2643adc3ae658a60c53, type: 2}
-  - {fileID: 11400000, guid: 2f2a3014250bb2b44ada269199f91f08, type: 2}
-  - {fileID: 11400000, guid: e5782916e74f90c47b8cd818cf0a2f29, type: 2}
-  - {fileID: 11400000, guid: 5faffcd0fa8c78242b0ed61996ef530f, type: 2}
-  - {fileID: 11400000, guid: ae5ecb860232f4a48b0d39c78df79ca2, type: 2}
-  - {fileID: 11400000, guid: 98a6476ecb3ef3d43907e22c5875f4db, type: 2}
+  - {fileID: 11400000, guid: f9fd9eb83a0abef4686dcc60b6fd33de, type: 2}
+  - {fileID: 11400000, guid: 371ff3be90e10b64cab5d16277c331d6, type: 2}
+  - {fileID: 11400000, guid: 00fb7abc25187b94dbd8db79c4904262, type: 2}
+  - {fileID: 11400000, guid: cd09f38b46c253047b0dfb9aade0fe23, type: 2}
+  - {fileID: 11400000, guid: 09000a1fcde688241b1cbefa5cadcba7, type: 2}
+  - {fileID: 11400000, guid: 609becd4c27b4764db461d223e884406, type: 2}
+  - {fileID: 11400000, guid: 5a91be486ee292e4eb70169c8001f362, type: 2}
+  - {fileID: 11400000, guid: 4d0da5be245170245b58f9da3e99be0b, type: 2}
+  - {fileID: 11400000, guid: 41b4c5142ac360a4984221c4cea1c89f, type: 2}
+  - {fileID: 11400000, guid: 3b89dd62f5085cf47a818369fe805d54, type: 2}
+  - {fileID: 11400000, guid: 9f00949d204fcd942a9d2b6a8097362b, type: 2}
+  - {fileID: 11400000, guid: 5d3024d217188e04a942f6fd904b311b, type: 2}
   - {fileID: 11400000, guid: c79cc1b05cd12304591b7e5281fe0eb1, type: 2}
   - {fileID: 11400000, guid: 7c12138a01445df4eb6b4d619b4cfb38, type: 2}
   - {fileID: 11400000, guid: 4acb4d8f6b5c73d4b9bf2212ea109b4c, type: 2}
@@ -3558,6 +3558,7 @@ MonoBehaviour:
   index: 0
   manaPlayed: 0
   plusScore: 0
+  scoreInfo: {fileID: 0}
 --- !u!4 &1916591721
 Transform:
   m_ObjectHideFlags: 0

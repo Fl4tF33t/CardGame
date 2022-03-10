@@ -19,5 +19,5 @@ MonoBehaviour:
   damageType: 1
   cardImage: {fileID: 21300000, guid: ac1480153707e4f409dc32ba7090460b, type: 3}
   frameImage: {fileID: 21300000, guid: ac1480153707e4f409dc32ba7090460b, type: 3}
-  numberInDeck: 20
+  numberInDeck: 1
   isSpecialCard: 0
