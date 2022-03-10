@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 2c73a0bd3152e6e4d8918c19b142ef39
+  - enabled: 1
+    path: Assets/Scenes/DrawGame.unity
+    guid: 0a95a789a635ba046aa2b31f4adb404a
+  - enabled: 1
+    path: Assets/Scenes/MongWin.unity
+    guid: bd0665965436c784c9cf724697eaf484
+  - enabled: 1
+    path: Assets/Scenes/SnakeWin.unity
+    guid: 6bce2811b0c0ea043bd40b6bd5f43fea
   m_configObjects: {}

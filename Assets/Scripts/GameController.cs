@@ -65,11 +65,15 @@ public class GameController : MonoBehaviour
         {
             if(scoreInfo.score1 > scoreInfo.score2)
             {
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(6);
             }
             else if(scoreInfo.score1 < scoreInfo.score2)
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(5);
+            }
+            else if( scoreInfo.score1 == scoreInfo.score2)
+            {
+                SceneManager.LoadScene(4);
             }
             
 
