@@ -26,7 +26,7 @@ public class Deck
         }
     }
 
-    private CardData RandomCard()
+    public CardData RandomCard()
     {
         CardData result = null;
         if (cardDatas.Count == 0)
@@ -38,7 +38,7 @@ public class Deck
         return result;
     }
 
-    private Card CreateNewCard(Vector3 position, string animName)
+    public Card CreateNewCard(Vector3 position, string animName)
     {
         GameObject newCard = GameObject.Instantiate(GameController.instance.cardPrefab,GameController.instance.canvas.gameObject.transform);
         newCard.transform.position = position;

@@ -39,7 +39,12 @@ public class GameController : MonoBehaviour
 
     public void SkipTurn()
     {
-        Debug.Log("SkipTurn");
+        Debug.Log("EndTurn");
+        for (int i = 0; i < 6; i++)
+        {
+            playerHand.cards[i] = null;
+        }
+        StartCoroutine(DealHands());    
     }
 
     internal IEnumerator DealHands()
