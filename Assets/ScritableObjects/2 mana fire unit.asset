@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 2 mana fire unit
   m_EditorClassIdentifier: 
   cardTitle: Fire card
-  description: Unit
+  description: 
   cost: 2
   damage: 2
   damageType: 1
-  cardImage: {fileID: 21300000, guid: a2abc6b1fbaeb704c91d66c0ca405ce0, type: 3}
-  frameImage: {fileID: 21300000, guid: c9c33772bd265f5439701b13766e8e3e, type: 3}
+  cardImage: {fileID: 21300000, guid: 653d4953c5bfa4c43b1b2cc622b38389, type: 3}
+  frameImage: {fileID: 21300000, guid: 653d4953c5bfa4c43b1b2cc622b38389, type: 3}
   numberInDeck: 1
   isSpecialCard: 0

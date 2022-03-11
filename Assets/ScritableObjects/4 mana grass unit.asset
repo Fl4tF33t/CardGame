@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 4 mana grass unit
   m_EditorClassIdentifier: 
   cardTitle: Grass Card
-  description: Unit
+  description: 
   cost: 4
   damage: 4
   damageType: 2

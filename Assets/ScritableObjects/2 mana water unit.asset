@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: 2 mana water unit
   m_EditorClassIdentifier: 
   cardTitle: Water Card
-  description: Unit
+  description: 
   cost: 2
   damage: 2
   damageType: 0
-  cardImage: {fileID: 21300000, guid: 5ec9b92366656fd4d92490dde6424f4f, type: 3}
-  frameImage: {fileID: 21300000, guid: c9c33772bd265f5439701b13766e8e3e, type: 3}
+  cardImage: {fileID: 21300000, guid: 299d291ea20d45044bdfedcd5b2fff12, type: 3}
+  frameImage: {fileID: 21300000, guid: 299d291ea20d45044bdfedcd5b2fff12, type: 3}
   numberInDeck: 1
   isSpecialCard: 0

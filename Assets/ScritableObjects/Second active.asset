@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a67ca82d62f271b4080338f97d5e1cfe, type: 3}
   m_Name: Second active
   m_EditorClassIdentifier: 
-  cardTitle: Spell card
-  description: if all same colour, unlock a second active
+  cardTitle: Active card
+  description: 
   cost: 0
   damage: 0
   damageType: 4
-  cardImage: {fileID: 0}
-  frameImage: {fileID: 0}
+  cardImage: {fileID: 21300000, guid: 2e8c435f39bfbc44d9d56ce6ebc54205, type: 3}
+  frameImage: {fileID: 21300000, guid: e6ec256945d77a74e902511f41786b0f, type: 3}
   numberInDeck: 1
   isSpecialCard: 1
